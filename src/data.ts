@@ -82,7 +82,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Pitch de Negócio', 'Marketing de Produto', 'Estudo de Viabilidade', 'Modelo de Subscrição', 'Estratégia Go-To-Market'],
       metricLabel: 'Validação de Mercado',
       metricValue: '19 Resp. Favoráveis',
-      pdfUrl: '/Estudo de Mercado das lojas físicas orientadas por um labirinto (Normal).pdf'
+      pdfUrl: '/PITCH inovação_compressed.pdf'
     },
     {
       id: 'folha-skimboard',
@@ -248,7 +248,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Business Pitch', 'Product Marketing', 'Feasibility Study', 'Subscription Model', 'Go-To-Market Strategy'],
       metricLabel: 'Market Validation',
       metricValue: '19 Favorable Resp.',
-      pdfUrl: '/Estudo de Mercado das lojas físicas orientadas por um labirinto (Normal).pdf'
+      pdfUrl: '/PITCH inovação_compressed.pdf'
     },
     {
       id: 'folha-skimboard',
