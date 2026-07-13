@@ -58,7 +58,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Marketing Relacional', 'Marketing Experiencial', 'Privacidade de Dados', 'Estudo de Caso', 'Inquéritos'],
       metricLabel: 'Respostas ao Inquérito',
       metricValue: '36 Respostas',
-      pdfUrl: '/api/pdfs/Caso de Estudo do Provador Digital da Zara.pdf'
+      pdfUrl: '/Caso de Estudo do Provador Digital da Zara.pdf'
     },
     {
       id: 'vitapen-pitch',
@@ -82,7 +82,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Pitch de Negócio', 'Marketing de Produto', 'Estudo de Viabilidade', 'Modelo de Subscrição', 'Estratégia Go-To-Market'],
       metricLabel: 'Validação de Mercado',
       metricValue: '19 Resp. Favoráveis',
-      pdfUrl: '/api/pdfs/PITCH da VitaPen.pdf'
+      pdfUrl: '/PITCH da VitaPen.pdf'
     },
     {
       id: 'folha-skimboard',
@@ -105,7 +105,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Plano Estratégico', 'Análise STEEPLE', 'Balanced Scorecard', 'Expansão de Mercado', 'Matriz Ansoff'],
       metricLabel: 'Meta de Vendas Ibérica',
       metricValue: '+30% Crescimento',
-      pdfUrl: '/api/pdfs/Plano Estratégico de Serviços para a FOLHA Skimboard.pdf'
+      pdfUrl: '/Plano Estratégico de Serviços para a FOLHA Skimboard.pdf'
     },
     {
       id: 'oh-my-snacks-singapore',
@@ -129,7 +129,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Marketing Internacional', 'Preço Skimming', 'Singapore GTM', 'Exportação', 'Oh! My Snacks'],
       metricLabel: 'Rendimento Alvo (SGD)',
       metricValue: '15.473 SGD /mês',
-      pdfUrl: '/api/pdfs/Plano de Marketing Internacional - Oh! My Snacks Singapura.pdf'
+      pdfUrl: '/Plano de Marketing Internacional - Oh! My Snacks Singapura.pdf'
     },
     {
       id: 'outfit21-marketing',
@@ -153,7 +153,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['E-commerce', 'Automação de Leads', 'Brevo Emailing', 'SEO On-Page', 'Google Ads'],
       metricLabel: 'Orçamento Planeado',
       metricValue: '6.600 € Anual',
-      pdfUrl: '/api/pdfs/Plano de Marketing Digital - Outfit21.pdf'
+      pdfUrl: '/Plano de Marketing Digital - Outfit21.pdf'
     },
     {
       id: 'campoaves-bioplus',
@@ -176,7 +176,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Gestão de Marcas', 'Co-Branding', 'Embalagem Ecológica', 'Calendário Editorial', 'Product Placement'],
       metricLabel: 'Proposta de Doação Co-Brand',
       metricValue: '5% dos Lucros',
-      pdfUrl: '/api/pdfs/Rebranding para a Campoaves Bio_compressed.pdf'
+      pdfUrl: '/Rebranding para a Campoaves Bio_compressed.pdf'
     },
     {
       id: 'timberland-upcycling',
@@ -199,7 +199,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Economia Circular', 'ODS Sustentáveis', 'Upcycling', 'Design de Produto', 'Ativação de Marca'],
       metricLabel: 'Alinhamento ODS ONU',
       metricValue: 'ODS 12 & ODS 15',
-      pdfUrl: '/api/pdfs/Projeto de Upcycling - Timberland TimberNest.pdf'
+      pdfUrl: '/Projeto de Upcycling - Timberland TimberNest.pdf'
     }
   ],
   en: [
@@ -224,7 +224,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Relationship Marketing', 'Experiential Marketing', 'Data Privacy', 'Case Study', 'Surveys'],
       metricLabel: 'Survey Responses',
       metricValue: '36 Responses',
-      pdfUrl: '/api/pdfs/Caso de Estudo do Provador Digital da Zara.pdf'
+      pdfUrl: '/Caso de Estudo do Provador Digital da Zara.pdf'
     },
     {
       id: 'vitapen-pitch',
@@ -248,7 +248,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Business Pitch', 'Product Marketing', 'Feasibility Study', 'Subscription Model', 'Go-To-Market Strategy'],
       metricLabel: 'Market Validation',
       metricValue: '19 Favorable Resp.',
-      pdfUrl: '/api/pdfs/PITCH da VitaPen.pdf'
+      pdfUrl: '/PITCH da VitaPen.pdf'
     },
     {
       id: 'folha-skimboard',
@@ -271,7 +271,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Strategic Plan', 'STEEPLE Analysis', 'Balanced Scorecard', 'Market Expansion', 'Ansoff Matrix'],
       metricLabel: 'Iberian Sales Goal',
       metricValue: '+30% Growth',
-      pdfUrl: '/api/pdfs/Plano Estratégico de Serviços para a FOLHA Skimboard.pdf'
+      pdfUrl: '/Plano Estratégico de Serviços para a FOLHA Skimboard.pdf'
     },
     {
       id: 'oh-my-snacks-singapore',
@@ -295,7 +295,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['International Marketing', 'Skimming Pricing', 'Singapore GTM', 'Exportation', 'Oh! My Snacks'],
       metricLabel: 'Target Income (SGD)',
       metricValue: '15,473 SGD /month',
-      pdfUrl: '/api/pdfs/Plano de Marketing Internacional - Oh! My Snacks Singapura.pdf'
+      pdfUrl: '/Plano de Marketing Internacional - Oh! My Snacks Singapura.pdf'
     },
     {
       id: 'outfit21-marketing',
@@ -319,7 +319,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['E-commerce', 'Lead Automation', 'Brevo Emailing', 'On-Page SEO', 'Google Ads'],
       metricLabel: 'Planned Budget',
       metricValue: '€6,600 Annual',
-      pdfUrl: '/api/pdfs/Plano de Marketing Digital - Outfit21.pdf'
+      pdfUrl: '/Plano de Marketing Digital - Outfit21.pdf'
     },
     {
       id: 'campoaves-bioplus',
@@ -342,7 +342,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Brand Management', 'Co-Branding', 'Eco-Packaging', 'Editorial Calendar', 'Product Placement'],
       metricLabel: 'Proposed Co-Brand Donation',
       metricValue: '5% of Profits',
-      pdfUrl: '/api/pdfs/Rebranding para a Campoaves Bio_compressed.pdf'
+      pdfUrl: '/Rebranding para a Campoaves Bio_compressed.pdf'
     },
     {
       id: 'timberland-upcycling',
@@ -365,7 +365,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Circular Economy', 'Sustainable SDGs', 'Upcycling', 'Product Design', 'Brand Activation'],
       metricLabel: 'UN SDG Alignment',
       metricValue: 'SDG 12 & SDG 15',
-      pdfUrl: '/api/pdfs/Projeto de Upcycling - Timberland TimberNest.pdf'
+      pdfUrl: '/Projeto de Upcycling - Timberland TimberNest.pdf'
     }
   ]
 };

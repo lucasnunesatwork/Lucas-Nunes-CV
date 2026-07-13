@@ -28,21 +28,6 @@ if (apiKey) {
   console.warn("WARNING: GEMINI_API_KEY environment variable is not set. The AI Marketing Assistant will run in simulated mode.");
 }
 
-// Serve real PDF files securely from the root
-app.get('/api/pdfs/:name', (req, res) => {
-  const name = req.params.name;
-  if (name.includes('..') || name.includes('/') || name.includes('\\')) {
-    return res.status(400).send('Invalid file name');
-  }
-  const filePath = path.resolve(process.cwd(), name);
-  if (fs.existsSync(filePath) && filePath.endsWith('.pdf')) {
-    res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', `inline; filename="${encodeURIComponent(name)}"`);
-    return res.sendFile(filePath);
-  }
-  res.status(404).send('File not found');
-});
-
 app.post('/api/generate-copy', async (req, res) => {
   try {
     const { product, targetAudience, framework, tone, extraInfo } = req.body;
