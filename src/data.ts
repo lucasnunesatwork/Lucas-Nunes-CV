@@ -176,7 +176,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Gestão de Marcas', 'Co-Branding', 'Embalagem Ecológica', 'Calendário Editorial', 'Product Placement'],
       metricLabel: 'Proposta de Doação Co-Brand',
       metricValue: '5% dos Lucros',
-      pdfUrl: '/api/pdfs/Reposicionamento de Marca - Campoaves Bio+.pdf'
+      pdfUrl: '/api/pdfs/Rebranding para a Campoaves Bio_compressed.pdf'
     },
     {
       id: 'timberland-upcycling',
@@ -342,7 +342,7 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       tags: ['Brand Management', 'Co-Branding', 'Eco-Packaging', 'Editorial Calendar', 'Product Placement'],
       metricLabel: 'Proposed Co-Brand Donation',
       metricValue: '5% of Profits',
-      pdfUrl: '/api/pdfs/Reposicionamento de Marca - Campoaves Bio+.pdf'
+      pdfUrl: '/api/pdfs/Rebranding para a Campoaves Bio_compressed.pdf'
     },
     {
       id: 'timberland-upcycling',
