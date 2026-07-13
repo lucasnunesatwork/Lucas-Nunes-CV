@@ -1,0 +1,6 @@
+Place your profile photo here!
+
+To make your photo appear in the app:
+1. Save your photo on your computer as "Clam-10hhhh.jpg".
+2. Drag and drop "Clam-10hhhh.jpg" directly into this "public" folder in the file explorer on the left.
+3. The app will immediately display your real photo instead of the vector avatar!
