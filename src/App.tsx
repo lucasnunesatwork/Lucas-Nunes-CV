@@ -47,7 +47,7 @@ const translations = {
     associativeActivity: 'Atividade Associativa',
     associativeRole: 'Presidente da Direção @ Atemphar',
     evidenceProjects: 'Projetos de Evidência',
-    genuineProjectsCount: '7 Projetos Genuínos',
+    genuineProjectsCount: '8 Projetos Genuínos',
     sessionMonitor: 'Monitor de Sessão',
     sessionStarted: 'Sessão iniciada há',
     testimonialsTitle: 'O que dizem sobre mim',
@@ -62,7 +62,7 @@ const translations = {
     testimonial3Role: 'Chief People Officer, LEADZAI',
     projectsHeading: 'Evidência Técnica Académica',
     projectsTitle: 'Grelha de Projetos e Relatórios',
-    projectsDescription: 'Estes são os sete projetos genuínos elaborados pelo Lucas. Três deles estão integrados e disponíveis para visualização e descarregamento imediato em formato PDF real (alojados diretamente no servidor).',
+    projectsDescription: 'Estes são os oito projetos genuínos elaborados pelo Lucas. Três deles estão integrados e disponíveis para visualização e descarregamento imediato em formato PDF real (alojados diretamente no servidor).',
     filterLabel: 'Filtros Rápidos:',
     all: 'Todos',
     branding: 'Branding & Produto',
@@ -100,8 +100,8 @@ const translations = {
     analyzeAlignment: 'Analisar a minha sintonia',
     myPerspective: 'A minha perspetiva sincera',
     expDilemma: '1. Dilema da Experiência',
-    perfectMatch: '✓ Sintonia excelente! Se procura alguém dinâmico, motivado e focado em aprender, estou pronto para arregaçar as mangas. No meu percurso académico e associativo já lidei com 7 projetos complexos — estou mais do que preparado para integrar a vossa equipa.',
-    reasonableFair: '✓ Parece-me muito justo. Com a minha experiência como Presidente da Atemphar e o desenvolvimento destes 7 planos de marketing, trago a autonomia e a proatividade de que necessita para um cargo júnior.',
+    perfectMatch: '✓ Sintonia excelente! Se procura alguém dinâmico, motivado e focado em aprender, estou pronto para arregaçar as mangas. No meu percurso académico e associativo já lidei com 8 projetos complexos — estou mais do que preparado para integrar a vossa equipa.',
+    reasonableFair: '✓ Parece-me muito justo. Com a minha experiência como Presidente da Atemphar e o desenvolvimento destes 8 planos de marketing, trago a autonomia e a proatividade de que necessita para um cargo júnior.',
     paradoxDetected: '⚠️ Temos aqui um pequeno paradoxo: Tenho apenas 20 anos. Para cumprir o vosso requisito de {yearsRequired} anos de experiência, teria de ter começado a elaborar planos estratégicos aos {calcAge} anos de idade! No entanto, se espreitar o meu projeto para a Timberland ou para a Folha Skimboards, verá que a minha dedicação e rigor gráfico estão ao nível de um profissional sénior.',
     envMotivation: '2. Ambiente & Motivação',
     pingpongDesc: '🏓 Mesa de Ping-Pong: Adoro jogar, mas com o ritmo das vossas campanhas duvido que tenhamos muito tempo livre! Ainda assim, fica espetacular nas fotos de employer branding no vosso Instagram.',
@@ -116,7 +116,6 @@ const translations = {
     verdictExcel: 'Sintonia Excelente! (Equipa de Alta Performance) 🚀',
     verdictBalanced: 'Sintonia Equilibrada. Prontos para alinhar objetivos!',
     verdictParadox: 'Alerta de Paradoxos. Alinhamento estratégico recomendado ⚠️',
-    footerCourse: 'Politécnico de Leiria (ESTG) • Proibido o uso de jargão e mock-ups sem nexo profissional.',
     hoursSpentText: 's',
     minsAndSecsText: 'm e',
     secText: 's',
@@ -147,7 +146,7 @@ const translations = {
     associativeActivity: 'Association Activity',
     associativeRole: 'President of the Board @ Atemphar',
     evidenceProjects: 'Evidence Projects',
-    genuineProjectsCount: '7 Genuine Projects',
+    genuineProjectsCount: '8 Genuine Projects',
     sessionMonitor: 'Session Monitor',
     sessionStarted: 'Session started',
     testimonialsTitle: 'What they say about me',
@@ -162,7 +161,7 @@ const translations = {
     testimonial3Role: 'Chief People Officer, LEADZAI',
     projectsHeading: 'Academic Technical Evidence',
     projectsTitle: 'Projects & Reports Grid',
-    projectsDescription: 'These are the seven genuine projects developed by Lucas. Three of them are integrated and available for immediate viewing and downloading in real PDF format (hosted directly on the server).',
+    projectsDescription: 'These are the eight genuine projects developed by Lucas. Three of them are integrated and available for immediate viewing and downloading in real PDF format (hosted directly on the server).',
     filterLabel: 'Quick Filters:',
     all: 'All',
     branding: 'Branding & Product',
@@ -200,8 +199,8 @@ const translations = {
     analyzeAlignment: 'Analyze my alignment',
     myPerspective: 'My honest perspective',
     expDilemma: '1. The Experience Dilemma',
-    perfectMatch: '✓ Excellent alignment! If you are looking for someone dynamic, motivated, and eager to learn, I am ready to roll up my sleeves. In my academic and association journey, I have already tackled 7 complex projects — I am more than ready to join your team.',
-    reasonableFair: '✓ Seems very fair to me. With my experience as President of Atemphar and the development of these 7 marketing plans, I bring the autonomy and proactivity you need for a junior role.',
+    perfectMatch: '✓ Excellent alignment! If you are looking for someone dynamic, motivated, and eager to learn, I am ready to roll up my sleeves. In my academic and association journey, I have already tackled 8 complex projects — I am more than ready to join your team.',
+    reasonableFair: '✓ Seems very fair to me. With my experience as President of Atemphar and the development of these 8 marketing plans, I bring the autonomy and proactivity you need for a junior role.',
     paradoxDetected: '⚠️ We have a small paradox here: I am only 20 years old. To meet your requirement of {yearsRequired} years of experience, I would have had to start developing strategic plans at {calcAge} years of age! However, if you look at my project for Timberland or Folha Skimboards, you will see that my dedication and graphic rigor are on par with a senior professional.',
     envMotivation: '2. Environment & Motivation',
     pingpongDesc: '🏓 Ping-Pong Table: I love to play, but with the pace of your campaigns, I doubt we will have much free time! Still, it looks spectacular in the employer branding photos on your Instagram.',
@@ -216,7 +215,6 @@ const translations = {
     verdictExcel: 'Excellent Alignment! (High-Performance Team) 🚀',
     verdictBalanced: 'Balanced Alignment. Ready to align goals!',
     verdictParadox: 'Paradox Alert. Strategic alignment recommended ⚠️',
-    footerCourse: 'Politécnico de Leiria (ESTG) • Corporate jargon and meaningless mock-ups strictly forbidden.',
     hoursSpentText: 's',
     minsAndSecsText: 'm and',
     secText: 's',
@@ -815,7 +813,6 @@ export default function App() {
       {/* FOOTER: Minimalista, Elegante e Discreto */}
       <footer className="border-t border-zinc-200 bg-white py-10 mt-12 text-center text-xs font-mono text-zinc-400 space-y-1">
         <p>LUCAS NUNES • {t.cvInteractive}</p>
-        <p className="text-[10px]">{t.footerCourse}</p>
       </footer>
 
     </div>

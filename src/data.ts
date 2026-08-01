@@ -200,6 +200,30 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       metricLabel: 'Alinhamento ODS ONU',
       metricValue: 'ODS 12 & ODS 15',
       pdfUrl: '/Reformulação de embalagem da Timberland para ser mais sustentável_compressed.pdf'
+    },
+    {
+      id: 'gazela-rebranding',
+      category: 'branding',
+      title: 'Rebranding de Vinho: Gazela',
+      subtitle: 'Rebranding do vinho branco sem álcool da marca Gazela',
+      period: 'Design e Construção de Marca',
+      institution: 'Politécnico de Leiria (ESTG)',
+      description: 'Projeto de rebranding para o vinho branco sem álcool da marca Gazela. Criação do manual de construção da marca e manual de normas gráficas.',
+      strategicChallenge: {
+        problem: 'Necessidade de adaptar a marca Gazela para um vinho sem álcool e biológico sem perder a sua essência jovial e autêntica.',
+        insight: 'O elemento gazela remete à pureza (sem álcool) e rapidez, e a cor azul reforça a ausência de álcool, tornando desnecessário um rebranding completo, mas sim um "twist" naturalista.',
+        impact: 'Construção de uma identidade visual baseada no logo original com elementos da natureza (videiras nos cornos da gazela) e adaptação de paleta cromática (Verde-rio, Azul celeste).'
+      },
+      outcomes: [
+        'Desenvolvimento do Manual de Construção da Marca e Manual de Normas Gráficas.',
+        'Definição da paleta cromática focada no biológico (tons de verde) e sem álcool (azul celeste).',
+        'Criação de assinaturas de marca ("A mesma vibe com ZERO% culpa" e "Naturalmente sem culpa").',
+        'Aplicações práticas da marca em packaging (garrafas), merchandising (copos, sacos, canecas, calendário) e social media.'
+      ],
+      tags: ['Rebranding', 'Design Gráfico', 'Vinho Sem Álcool', 'Identidade Visual', 'Packaging'],
+      metricLabel: 'Aplicações Práticas',
+      metricValue: '+10 Formatos',
+      pdfUrl: '/Gazela Manual_compressed.pdf'
     }
   ],
   en: [
@@ -366,6 +390,30 @@ export const projectsList: Record<'pt' | 'en', Project[]> = {
       metricLabel: 'UN SDG Alignment',
       metricValue: 'SDG 12 & SDG 15',
       pdfUrl: '/Reformulação de embalagem da Timberland para ser mais sustentável_compressed.pdf'
+    },
+    {
+      id: 'gazela-rebranding',
+      category: 'branding',
+      title: 'Wine Rebranding: Gazela',
+      subtitle: 'Rebranding of Gazela\'s non-alcoholic white wine',
+      period: 'Brand Design and Construction',
+      institution: 'Politécnico de Leiria (ESTG)',
+      description: 'Rebranding project for Gazela\'s non-alcoholic white wine. Creation of the brand construction manual and graphic standards manual.',
+      strategicChallenge: {
+        problem: 'Need to adapt the Gazela brand for a non-alcoholic and organic wine without losing its jovial and authentic essence.',
+        insight: 'The gazelle element refers to purity (non-alcoholic) and speed, and the color blue reinforces the absence of alcohol, making a complete rebranding unnecessary, but rather a naturalistic "twist".',
+        impact: 'Construction of a visual identity based on the original logo with nature elements (vines on the gazelle\'s horns) and chromatic palette adaptation (River green, Light blue).'
+      },
+      outcomes: [
+        'Development of the Brand Construction Manual and Graphic Standards Manual.',
+        'Definition of the chromatic palette focused on organic (shades of green) and non-alcoholic (light blue).',
+        'Creation of brand signatures ("The same vibe with ZERO% guilt" and "Naturally without guilt").',
+        'Practical applications of the brand in packaging (bottles), merchandising (cups, bags, mugs, calendar) and social media.'
+      ],
+      tags: ['Rebranding', 'Graphic Design', 'Non-Alcoholic Wine', 'Visual Identity', 'Packaging'],
+      metricLabel: 'Practical Applications',
+      metricValue: '+10 Formats',
+      pdfUrl: '/Gazela Manual_compressed.pdf'
     }
   ]
 };
@@ -549,9 +597,9 @@ export const persuasiveRecruiterArguments: Record<'pt' | 'en', any[]> = {
   pt: [
     {
       title: 'Competência Prática e Académica',
-      description: 'Com apenas 20 anos, o Lucas já é Presidente da Direção da Atemphar e desenhou sete planos estratégicos detalhados para marcas nacionais e globais.',
+      description: 'Com apenas 20 anos, o Lucas já é Presidente da Direção da Atemphar e desenhou oito planos estratégicos detalhados para marcas nacionais e globais.',
       icon: 'Sparkles',
-      metric: '7 Planos Reais',
+      metric: '8 Planos Reais',
       detail: 'De experiência académica e associativa documentada.'
     },
     {
@@ -579,9 +627,9 @@ export const persuasiveRecruiterArguments: Record<'pt' | 'en', any[]> = {
   en: [
     {
       title: 'Practical & Academic Competence',
-      description: 'At just 20 years old, Lucas is already President of the Board of Atemphar and has designed seven detailed strategic plans for national and global brands.',
+      description: 'At just 20 years old, Lucas is already President of the Board of Atemphar and has designed eight detailed strategic plans for national and global brands.',
       icon: 'Sparkles',
-      metric: '7 Real Plans',
+      metric: '8 Real Plans',
       detail: 'Documented academic and associative experience.'
     },
     {
