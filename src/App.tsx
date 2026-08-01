@@ -50,6 +50,16 @@ const translations = {
     genuineProjectsCount: '7 Projetos Genuínos',
     sessionMonitor: 'Monitor de Sessão',
     sessionStarted: 'Sessão iniciada há',
+    testimonialsTitle: 'O que dizem sobre mim',
+    testimonial1Quote: '(...) o Lucas distingue-se pela maturidade, empenho e vontade de aprender. Estou convicto de que será uma mais-valia em qualquer equipa, pelo que o recomendo, sem reservas (...)',
+    testimonial1Name: 'Vítor Ferreira',
+    testimonial1Role: 'Diretor Executivo, Startup Leiria',
+    testimonial2Quote: '(...) é interessado, aplicado e tem muito boa capacidade de trabalho, quer no trabalho desenvolvido individual e autonomamente, quer no trabalho desenvolvido em equipa.',
+    testimonial2Name: 'Paula Simões',
+    testimonial2Role: 'Prof.ª Adj.ª, Dep. Economia e Gestão do PLeiria',
+    testimonial3Quote: '(...) demonstrou maturidade, boa capacidade de comunicação e facilidade em adaptar-se a diferentes contextos e interlocutores (...) será uma mais-valia para qualquer organização (...)',
+    testimonial3Name: 'João Bogalho',
+    testimonial3Role: 'Chief People Officer, LEADZAI',
     projectsHeading: 'Evidência Técnica Académica',
     projectsTitle: 'Grelha de Projetos e Relatórios',
     projectsDescription: 'Estes são os sete projetos genuínos elaborados pelo Lucas. Três deles estão integrados e disponíveis para visualização e descarregamento imediato em formato PDF real (alojados diretamente no servidor).',
@@ -140,6 +150,16 @@ const translations = {
     genuineProjectsCount: '7 Genuine Projects',
     sessionMonitor: 'Session Monitor',
     sessionStarted: 'Session started',
+    testimonialsTitle: 'What they say about me',
+    testimonial1Quote: '(...) Lucas distinguishes himself by his maturity, commitment and willingness to learn. I am convinced that he will be an asset in any team, which is why I recommend him unreservedly (...)',
+    testimonial1Name: 'Vítor Ferreira',
+    testimonial1Role: 'Executive Director, Startup Leiria',
+    testimonial2Quote: '(...) he is interested, dedicated and has a very good capacity for work, both in work developed individually and autonomously, and in teamwork.',
+    testimonial2Name: 'Paula Simões',
+    testimonial2Role: 'Adjunct Prof., Dept. of Economics and Management at PLeiria',
+    testimonial3Quote: '(...) demonstrated maturity, good communication skills and ease in adapting to different contexts and interlocutors (...) will be an asset to any organization (...)',
+    testimonial3Name: 'João Bogalho',
+    testimonial3Role: 'Chief People Officer, LEADZAI',
     projectsHeading: 'Academic Technical Evidence',
     projectsTitle: 'Projects & Reports Grid',
     projectsDescription: 'These are the seven genuine projects developed by Lucas. Three of them are integrated and available for immediate viewing and downloading in real PDF format (hosted directly on the server).',
@@ -355,10 +375,6 @@ export default function App() {
                 {t.heroDescription3}
               </p>
             </div>
-            
-            <p className="text-zinc-500 leading-relaxed text-sm italic font-serif pt-1">
-              {t.heroQuote}
-            </p>
 
             {/* Quick Badges Link */}
             <div className="flex flex-wrap gap-3 pt-2">
@@ -414,6 +430,47 @@ export default function App() {
             </div>
           </div>
           
+        </section>
+
+        {/* O QUE DIZEM SOBRE MIM (TESTIMONIALS) */}
+        <section className="bg-zinc-900 border border-zinc-800 p-8 rounded-lg shadow-sm">
+          <div className="space-y-6">
+            <h3 className="font-mono font-black text-xs uppercase tracking-wider text-emerald-400 border-b border-zinc-800 pb-2">
+              {t.testimonialsTitle}
+            </h3>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="space-y-4">
+                <p className="text-sm text-zinc-400 italic font-serif leading-relaxed">
+                  "{t.testimonial1Quote}"
+                </p>
+                <div>
+                  <p className="font-bold text-sm text-zinc-100">{t.testimonial1Name}</p>
+                  <p className="text-xs text-zinc-500 font-mono mt-1">{t.testimonial1Role}</p>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <p className="text-sm text-zinc-400 italic font-serif leading-relaxed">
+                  "{t.testimonial2Quote}"
+                </p>
+                <div>
+                  <p className="font-bold text-sm text-zinc-100">{t.testimonial2Name}</p>
+                  <p className="text-xs text-zinc-500 font-mono mt-1">{t.testimonial2Role}</p>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <p className="text-sm text-zinc-400 italic font-serif leading-relaxed">
+                  "{t.testimonial3Quote}"
+                </p>
+                <div>
+                  <p className="font-bold text-sm text-zinc-100">{t.testimonial3Name}</p>
+                  <p className="text-xs text-zinc-500 font-mono mt-1">{t.testimonial3Role}</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* PROJETOS: O Coração das Evidências Técnicas */}
