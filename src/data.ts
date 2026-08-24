@@ -655,3 +655,30 @@ export const persuasiveRecruiterArguments: Record<'pt' | 'en', any[]> = {
     }
   ]
 };
+
+import { PartnershipItem } from './types';
+
+export const partnershipsList: Record<'pt' | 'en', PartnershipItem[]> = {
+  pt: [
+    {
+      id: 'partnership-1',
+      title: 'Parcerias & Criação de Conteúdo',
+      establishment: 'Conteúdo Promocional para Negócios Locais',
+      description: 'Vídeo promocional em formato curto (Reels/TikTok) criado para destacar a experiência do cliente e promover espaços de restauração locais. A colaboração foca-se em storytelling envolvente e alto dinamismo visual.',
+      mediaType: 'video',
+      mediaUrl: 'https://www.tiktok.com/embed/v2/7672833899923393824',
+      link: 'https://vm.tiktok.com/ZGdxsKVDa/'
+    }
+  ],
+  en: [
+    {
+      id: 'partnership-1',
+      title: 'Partnerships & Content Creation',
+      establishment: 'Promotional Content for Local Businesses',
+      description: 'Short-form promotional video (Reels/TikTok) created to highlight customer experience and promote local dining spaces. The collaboration focuses on engaging storytelling and high visual dynamism.',
+      mediaType: 'video',
+      mediaUrl: 'https://www.tiktok.com/embed/v2/7672833899923393824',
+      link: 'https://vm.tiktok.com/ZGdxsKVDa/'
+    }
+  ]
+};

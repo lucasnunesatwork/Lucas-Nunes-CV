@@ -40,6 +40,16 @@ export interface ExperienceItem {
   deliverables: Deliverable[];
 }
 
+export interface PartnershipItem {
+  id: string;
+  title: string;
+  establishment: string;
+  description: string;
+  mediaType: 'video' | 'image';
+  mediaUrl: string;
+  link?: string;
+}
+
 export interface FunnelStage {
   id: 'awareness' | 'evaluation' | 'proof' | 'fit' | 'conversion';
   label: string;

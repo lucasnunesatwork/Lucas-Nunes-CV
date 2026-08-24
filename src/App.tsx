@@ -29,7 +29,7 @@ import { motion, AnimatePresence } from 'motion/react';
 
 // Modular imports
 import { Project, ExperienceItem } from './types';
-import { projectsList, experienceList, persuasiveRecruiterArguments } from './data';
+import { projectsList, experienceList, persuasiveRecruiterArguments, partnershipsList } from './data';
 
 const translations = {
   pt: {
@@ -83,6 +83,10 @@ const translations = {
     trajectoryHeading: 'Trajetória Real',
     trajectoryTitle: 'Formação Académica & Atividade Associativa',
     trajectoryDescription: 'Estrutura simples e transparente sobre os estudos formais do Lucas Nunes no Politécnico de Leiria e a sua experiência ativa em liderança de comunicação voluntária.',
+    partnershipsHeading: 'Criação de Conteúdo',
+    partnershipsTitle: 'Parcerias & Dinamismo Local',
+    partnershipsDescription: 'Projetos de criação de conteúdo (vídeos curtos) que faço através de parcerias com restaurantes, pastelarias e negócios locais focados na atração visual e experiência.',
+    viewOnTiktok: 'VER NO TIKTOK →',
     trajectoryDetail: 'Detalhe Factual de Trajetória',
     skillsTools: 'Capacidades e Ferramentas Práticas',
     recruiterDilemmaHeading: 'O Dilema do Recrutador & Índice de Sintonia Tática',
@@ -182,6 +186,10 @@ const translations = {
     trajectoryHeading: 'Real Trajectory',
     trajectoryTitle: 'Academic Training & Association Activity',
     trajectoryDescription: 'Simple and transparent overview of Lucas Nunes\' formal studies at Politécnico de Leiria and his active volunteer leadership experience.',
+    partnershipsHeading: 'Content Creation',
+    partnershipsTitle: 'Partnerships & Local Dynamism',
+    partnershipsDescription: 'Content creation projects (short-form videos) developed through partnerships with local restaurants, bakeries, and businesses focused on visual appeal and experience.',
+    viewOnTiktok: 'VIEW ON TIKTOK →',
     trajectoryDetail: 'Factual Trajectory Detail',
     skillsTools: 'Practical Capabilities & Tools',
     recruiterDilemmaHeading: 'The Recruiter\'s Dilemma & Tactical Alignment Index',
@@ -239,6 +247,7 @@ export default function App() {
 
   const currentProjectsList = projectsList[lang];
   const currentExperienceList = experienceList[lang];
+  const currentPartnershipsList = partnershipsList[lang];
   const currentPersuasiveRecruiterArguments = persuasiveRecruiterArguments[lang];
 
   const [expandedProject, setExpandedProject] = useState<string | null>(null);
@@ -658,6 +667,53 @@ export default function App() {
                 </div>
               );
             })}
+          </div>
+        </section>
+
+        {/* PARCERIAS E CRIAÇÃO DE CONTEÚDO */}
+        <section className="space-y-6">
+          <div className="space-y-1 border-b border-zinc-200 pb-4">
+            <span className="font-mono text-xs text-emerald-600 uppercase font-black">{t.partnershipsHeading}</span>
+            <h3 className="text-2xl sm:text-3xl font-black font-display uppercase tracking-tight text-zinc-900">
+              {t.partnershipsTitle}
+            </h3>
+            <p className="text-sm text-zinc-500 leading-normal max-w-3xl">
+              {t.partnershipsDescription}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {currentPartnershipsList.map((partner) => (
+              <div key={partner.id} className="bg-white border border-zinc-200 p-6 rounded-md shadow-sm space-y-4">
+                <div>
+                  <h4 className="text-lg font-bold text-zinc-900">{partner.title}</h4>
+                  <p className="text-sm font-mono text-emerald-600 mt-1">{partner.establishment}</p>
+                </div>
+                <p className="text-sm text-zinc-600 leading-relaxed">
+                  {partner.description}
+                </p>
+                {partner.mediaType === 'video' && partner.mediaUrl && (
+                  <div className="w-full h-[580px] rounded overflow-hidden border border-zinc-200">
+                    <iframe
+                      src={partner.mediaUrl}
+                      className="w-full h-full"
+                      allowFullScreen
+                      allow="encrypted-media;"
+                    ></iframe>
+                  </div>
+                )}
+                {partner.link && (
+                  <a 
+                    href={partner.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center text-xs font-bold font-mono text-emerald-600 hover:text-emerald-700 transition-colors"
+                  >
+                    {t.viewOnTiktok}
+                  </a>
+                )}
+              </div>
+            ))}
           </div>
         </section>
 
