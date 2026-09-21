@@ -23,21 +23,24 @@ import {
   MapPin,
   ExternalLink,
   Target,
-  FileCheck
+  FileCheck,
+  Instagram,
+  Camera,
+  AtSign
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 
 // Modular imports
 import { Project, ExperienceItem } from './types';
-import { projectsList, experienceList, persuasiveRecruiterArguments, partnershipsList } from './data';
+import { projectsList, experienceList, persuasiveRecruiterArguments, partnershipsList, photographyList } from './data';
 
 const translations = {
   pt: {
     cvInteractive: 'CV INTERATIVO',
-    academicStatus: 'Marketing Finalista @ Politécnico de Leiria (ESTG)',
+    academicStatus: 'Marketing, Data-driven Marketing and Customer Experience',
     availableBadge: 'À procura de emprego • Leiria / Lisboa',
     heroTitle: 'Não é apenas um CV. É uma demonstração de Estratégia.',
-    heroDescription1: 'Olá! Sou o Lucas Nunes, estudante finalista da Licenciatura em Marketing no Politécnico de Leiria (ESTG) e futuro mestrando em Data-driven Marketing (com especialização em Customer Experience) a partir de setembro de 2026.',
+    heroDescription1: 'Olá! Sou o Lucas Nunes, licenciado em Marketing pela Universidade de Leiria e Oeste (ESTG) e futuro mestrando em Data-driven Marketing (com especialização em Customer Experience) a partir de setembro de 2026.',
     heroDescription2: 'O que verdadeiramente me apaixona é estudar dados e ligá-los às reais intenções de quem consome. Gosto imenso de branding e marketing digital — compreender como uma marca pode ser empática, memorável e adaptar-se com agilidade às tendências de mercado. Acredito que a versatilidade e a adaptabilidade são os dois valores cruciais para o profissional de amanhã (especialmente perante a evolução acelerada da IA).',
     heroDescription3: 'Até agora, colaborei em 3 associações juvenis e empresariais distintas (AJPH - Atemphar, Startup Leiria e AAPI) e estive em contacto com clientes de 4 setores diferentes (desde a saúde e desporto à inovação e internacionalização). Tudo isto com muito dinamismo, rigor estatístico e uma abordagem focada em resultados práticos e mensuráveis!',
     heroQuote: '"Este espaço reúne sete projetos originais que desenvolvi e defendi. Cada relatório de projeto abaixo resume com absoluta fidelidade a metodologia aplicada, os dados reais recolhidos e as conclusões aprovadas."',
@@ -82,11 +85,14 @@ const translations = {
     viewFullProject: 'Ver Projeto Completo',
     trajectoryHeading: 'Trajetória Real',
     trajectoryTitle: 'Formação Académica & Atividade Associativa',
-    trajectoryDescription: 'Estrutura simples e transparente sobre os estudos formais do Lucas Nunes no Politécnico de Leiria e a sua experiência ativa em liderança de comunicação voluntária.',
+    trajectoryDescription: 'Estrutura simples e transparente sobre os estudos formais do Lucas Nunes na Universidade de Leiria e Oeste e a sua experiência ativa em liderança de comunicação voluntária.',
     partnershipsHeading: 'Criação de Conteúdo',
     partnershipsTitle: 'Parcerias & Dinamismo Local',
     partnershipsDescription: 'Projetos de criação de conteúdo (vídeos curtos) que faço através de parcerias com restaurantes, pastelarias e negócios locais focados na atração visual e experiência.',
-    viewOnTiktok: 'VER NO TIKTOK →',
+    viewOnSocial: 'VER VÍDEO ORIGINAL →',
+    photographyHeading: 'Fotografia & Visual',
+    photographyTitle: 'Portefólio Fotográfico',
+    photographyDescription: 'Uma seleção dos meus trabalhos e registos visuais partilhados no Instagram (@the_lucasnunes), Threads (@the_lucasnunes) e ViewBug. Cada imagem conta uma história através das lentes.',
     trajectoryDetail: 'Detalhe Factual de Trajetória',
     skillsTools: 'Capacidades e Ferramentas Práticas',
     recruiterDilemmaHeading: 'O Dilema do Recrutador & Índice de Sintonia Tática',
@@ -137,10 +143,10 @@ const translations = {
   },
   en: {
     cvInteractive: 'INTERACTIVE CV',
-    academicStatus: 'Final-Year Marketing Student @ Politécnico de Leiria (ESTG)',
+    academicStatus: 'Marketing, Data-driven Marketing and Customer Experience',
     availableBadge: 'Looking for a Job • Leiria / Lisbon',
     heroTitle: 'Not just a CV. A demonstration of Strategy.',
-    heroDescription1: 'Hello! I am Lucas Nunes, a final-year undergraduate Marketing student at Politécnico de Leiria (ESTG) and an incoming Master\'s student in Data-driven Marketing (specializing in Customer Experience) starting September 2026.',
+    heroDescription1: 'Hello! I am Lucas Nunes, a Marketing graduate from Universidade de Leiria e Oeste (ESTG) and an incoming Master\'s student in Data-driven Marketing (specializing in Customer Experience) starting September 2026.',
     heroDescription2: 'What truly excites me is studying data and connecting it to the real motivations behind consumer actions. I am deeply interested in branding and digital marketing — understanding how a brand can be empathetic, memorable, and agile in adapting to market trends. I believe versatility and adaptability are the two most critical values for tomorrow\'s professional (especially in the face of rapid AI evolution).',
     heroDescription3: 'So far, I have collaborated with 3 different youth and business associations (AJPH - Atemphar, Startup Leiria, and AAPI) and have worked with clients across 4 different sectors (from health and sports to innovation and internationalization). All of this with a highly dynamic, statistically rigorous approach, focused on practical and measurable results!',
     heroQuote: '"This space features seven original projects I have developed and defended. Each project report below faithfully summarizes the applied methodology, real collected data, and approved conclusions."',
@@ -185,11 +191,14 @@ const translations = {
     viewFullProject: 'View Full Project',
     trajectoryHeading: 'Real Trajectory',
     trajectoryTitle: 'Academic Training & Association Activity',
-    trajectoryDescription: 'Simple and transparent overview of Lucas Nunes\' formal studies at Politécnico de Leiria and his active volunteer leadership experience.',
+    trajectoryDescription: 'Simple and transparent overview of Lucas Nunes\' formal studies at Universidade de Leiria e Oeste and his active volunteer leadership experience.',
     partnershipsHeading: 'Content Creation',
     partnershipsTitle: 'Partnerships & Local Dynamism',
     partnershipsDescription: 'Content creation projects (short-form videos) developed through partnerships with local restaurants, bakeries, and businesses focused on visual appeal and experience.',
-    viewOnTiktok: 'VIEW ON TIKTOK →',
+    viewOnSocial: 'VIEW ORIGINAL VIDEO →',
+    photographyHeading: 'Photography & Visual',
+    photographyTitle: 'Photography Portfolio',
+    photographyDescription: 'A selection of my visual work and captures shared on Instagram (@the_lucasnunes), Threads (@the_lucasnunes) and ViewBug. Every image tells a story through the lens.',
     trajectoryDetail: 'Factual Trajectory Detail',
     skillsTools: 'Practical Capabilities & Tools',
     recruiterDilemmaHeading: 'The Recruiter\'s Dilemma & Tactical Alignment Index',
@@ -416,7 +425,7 @@ export default function App() {
             <div className="space-y-4 font-mono text-xs text-zinc-700">
               <div className="space-y-0.5">
                 <span className="text-[10px] text-zinc-400 uppercase">{t.academicInstitution}</span>
-                <p className="font-black text-zinc-900">Politécnico de Leiria (ESTG)</p>
+                <p className="font-black text-zinc-900">Universidade de Leiria e Oeste (ESTG)</p>
               </div>
               <div className="space-y-0.5">
                 <span className="text-[10px] text-zinc-400 uppercase">{t.academicCourse}</span>
@@ -709,10 +718,77 @@ export default function App() {
                     rel="noopener noreferrer"
                     className="inline-flex items-center text-xs font-bold font-mono text-emerald-600 hover:text-emerald-700 transition-colors"
                   >
-                    {t.viewOnTiktok}
+                    {t.viewOnSocial}
                   </a>
                 )}
               </div>
+            ))}
+          </div>
+        </section>
+
+        {/* PORTEFÓLIO DE FOTOGRAFIA */}
+        <section className="space-y-6">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between border-b border-zinc-200 pb-4 gap-4">
+            <div className="space-y-1">
+              <span className="font-mono text-xs text-emerald-600 uppercase font-black">{t.photographyHeading}</span>
+              <h3 className="text-2xl sm:text-3xl font-black font-display uppercase tracking-tight text-zinc-900">
+                {t.photographyTitle}
+              </h3>
+              <p className="text-sm text-zinc-500 leading-normal max-w-2xl">
+                {t.photographyDescription}
+              </p>
+            </div>
+            <div className="flex flex-wrap items-center gap-2 shrink-0">
+              <a 
+                href="https://www.instagram.com/the_lucasnunes/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-zinc-900 text-white px-4 py-2 rounded-md text-sm font-bold shadow-sm hover:bg-emerald-600 transition-colors gap-2"
+              >
+                <Instagram className="w-4 h-4" />
+                Instagram
+              </a>
+              <a 
+                href="https://www.threads.com/@the_lucasnunes" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-zinc-900 text-white px-4 py-2 rounded-md text-sm font-bold shadow-sm hover:bg-emerald-600 transition-colors gap-2"
+              >
+                <AtSign className="w-4 h-4" />
+                Threads
+              </a>
+              <a 
+                href="https://www.viewbug.com/member/thelucasnunes" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-zinc-900 text-white px-4 py-2 rounded-md text-sm font-bold shadow-sm hover:bg-emerald-600 transition-colors gap-2"
+              >
+                <Camera className="w-4 h-4" />
+                Viewbug
+              </a>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {photographyList.map((photo) => (
+              <a 
+                key={photo.id}
+                href={photo.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative aspect-square overflow-hidden rounded-md bg-zinc-100 block border border-zinc-200"
+              >
+                <img 
+                  src={photo.imageUrl} 
+                  alt={photo.alt}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
+                  <Instagram className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-md" />
+                </div>
+              </a>
             ))}
           </div>
         </section>

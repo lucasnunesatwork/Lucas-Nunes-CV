@@ -50,6 +50,13 @@ export interface PartnershipItem {
   link?: string;
 }
 
+export interface PhotographyItem {
+  id: string;
+  imageUrl: string;
+  link: string;
+  alt: string;
+}
+
 export interface FunnelStage {
   id: 'awareness' | 'evaluation' | 'proof' | 'fit' | 'conversion';
   label: string;

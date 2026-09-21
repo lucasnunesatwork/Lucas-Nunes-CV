@@ -487,10 +487,23 @@ export const experienceList: Record<'pt' | 'en', ExperienceItem[]> = {
       ]
     },
     {
+      id: 'novaims-master',
+      role: 'Mestrado em Data-driven Marketing (Especialização em Customer Experience)',
+      company: 'NOVA IMS',
+      period: 'Setembro 2026 - 2028',
+      description: [
+        'Formação avançada em tomada de decisões baseadas em dados.',
+        'Foco na otimização da experiência do cliente (Customer Experience) e métricas de desempenho.'
+      ],
+      tools: ['Data Analytics', 'Customer Experience (CX)', 'Estratégia de Marketing', 'Insights de Consumidor'],
+      category: 'Formação Académica',
+      deliverables: []
+    },
+    {
       id: 'ipleiria-studies',
-      role: 'Estudante de Licenciatura em Marketing',
-      company: 'Escola Superior de Tecnologia e Gestão (ESTG) - Politécnico de Leiria',
-      period: '2023 - 2026 (Finalista)',
+      role: 'Licenciatura em Marketing',
+      company: 'Escola Superior de Tecnologia e Gestão (ESTG) - Universidade de Leiria e Oeste',
+      period: '2023 - 2026',
       description: [
         'Formação teórica e prática abrangente em marketing estratégico, internacional, digital e comportamento do consumidor.',
         'Desenvolvimento de estudos de caso exaustivos e projetos multidisciplinares com empresas reais (Oh! My Snacks, Zara, Timberland, Campoaves, Folha Skimboards, Outfit21).',
@@ -573,10 +586,23 @@ export const experienceList: Record<'pt' | 'en', ExperienceItem[]> = {
       ]
     },
     {
+      id: 'novaims-master',
+      role: 'Master in Data-driven Marketing (Specialization in Customer Experience)',
+      company: 'NOVA IMS',
+      period: 'September 2026 - 2028',
+      description: [
+        'Advanced training in data-driven decision making.',
+        'Focus on optimizing Customer Experience (CX) and performance metrics.'
+      ],
+      tools: ['Data Analytics', 'Customer Experience (CX)', 'Marketing Strategy', 'Consumer Insights'],
+      category: 'Academic Training',
+      deliverables: []
+    },
+    {
       id: 'ipleiria-studies',
-      role: 'Marketing Undergraduate Student',
-      company: 'School of Technology and Management (ESTG) - Politécnico de Leiria',
-      period: '2023 - 2026 (Finalist)',
+      role: 'Bachelor in Marketing',
+      company: 'School of Technology and Management (ESTG) - Universidade de Leiria e Oeste',
+      period: '2023 - 2026',
       description: [
         'Comprehensive theoretical and practical training in strategic, international, and digital marketing, and consumer behavior.',
         'Developed exhaustive case studies and multidisciplinary projects featuring real companies (Oh! My Snacks, Zara, Timberland, Campoaves, Folha Skimboards, Outfit21).',
@@ -668,6 +694,33 @@ export const partnershipsList: Record<'pt' | 'en', PartnershipItem[]> = {
       mediaType: 'video',
       mediaUrl: 'https://www.tiktok.com/embed/v2/7672833899923393824',
       link: 'https://vm.tiktok.com/ZGdxsKVDa/'
+    },
+    {
+      id: 'partnership-2',
+      title: 'Parcerias & Criação de Conteúdo',
+      establishment: 'Foco na Experiência Gastronómica',
+      description: 'Criação de conteúdo visual atrativo para promover experiências gastronómicas em restaurantes e espaços locais.',
+      mediaType: 'video',
+      mediaUrl: 'https://www.instagram.com/p/DbwPmNLsPiJ/embed',
+      link: 'https://www.instagram.com/reel/DbwPmNLsPiJ/'
+    },
+    {
+      id: 'partnership-3',
+      title: 'Parcerias & Criação de Conteúdo',
+      establishment: 'Promoção de eventos e atividades associativista',
+      description: 'Colaboração focada na divulgação de produtos locais através de vídeos curtos, maximizando o alcance e interação (engagement).',
+      mediaType: 'video',
+      mediaUrl: 'https://www.instagram.com/p/C9lHkJAMUyw/embed',
+      link: 'https://www.instagram.com/reel/C9lHkJAMUyw/'
+    },
+    {
+      id: 'partnership-4',
+      title: 'Parcerias & Criação de Conteúdo',
+      establishment: 'Destaque de Produtos Locais',
+      description: 'Exploração criativa e dinâmica para apresentar a qualidade dos produtos locais aos consumidores.',
+      mediaType: 'video',
+      mediaUrl: 'https://www.instagram.com/p/DQExX-uCCtq/embed',
+      link: 'https://www.instagram.com/p/DQExX-uCCtq/'
     }
   ],
   en: [
@@ -679,6 +732,74 @@ export const partnershipsList: Record<'pt' | 'en', PartnershipItem[]> = {
       mediaType: 'video',
       mediaUrl: 'https://www.tiktok.com/embed/v2/7672833899923393824',
       link: 'https://vm.tiktok.com/ZGdxsKVDa/'
+    },
+    {
+      id: 'partnership-2',
+      title: 'Partnerships & Content Creation',
+      establishment: 'Focus on Gastronomic Experience',
+      description: 'Creation of engaging visual content to promote gastronomic experiences in local restaurants and spaces.',
+      mediaType: 'video',
+      mediaUrl: 'https://www.instagram.com/p/DbwPmNLsPiJ/embed',
+      link: 'https://www.instagram.com/reel/DbwPmNLsPiJ/'
+    },
+    {
+      id: 'partnership-3',
+      title: 'Partnerships & Content Creation',
+      establishment: 'Promotion of associative events and activities',
+      description: 'Collaboration focused on promoting local products through short videos, maximizing reach and interaction (engagement).',
+      mediaType: 'video',
+      mediaUrl: 'https://www.instagram.com/p/C9lHkJAMUyw/embed',
+      link: 'https://www.instagram.com/reel/C9lHkJAMUyw/'
+    },
+    {
+      id: 'partnership-4',
+      title: 'Partnerships & Content Creation',
+      establishment: 'Highlighting Local Products',
+      description: 'Creative and dynamic exploration to present the quality of local products to consumers.',
+      mediaType: 'video',
+      mediaUrl: 'https://www.instagram.com/p/DQExX-uCCtq/embed',
+      link: 'https://www.instagram.com/p/DQExX-uCCtq/'
     }
   ]
 };
+
+import { PhotographyItem } from './types';
+
+export const photographyList: PhotographyItem[] = [
+  {
+    id: 'photo-1',
+    imageUrl: 'https://instagram.fopo5-1.fna.fbcdn.net/v/t51.82787-15/640333465_18569144161051606_1435916331410673744_n.webp?_nc_cat=102&ig_cache_key=MzEzODEwMzkyNDU4NTg2MzMwNA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuODUwLnNkci5yZWd1bGFyX3Bob3RvLkMzIn0%3D&_nc_ohc=_yNufK6qbAgQ7kNvwHB2tfn&_nc_oc=AdojHmQXUUR0w7dyeadks8SmDVywypfTvxBNsZQAeMva534QiBCc9K0JibLPCfDwFG_2WiyZfMr2gInTyjKbiPIj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fopo5-1.fna&_nc_gid=DIwaLf1riLgHFZputv2PtA&_nc_ss=7a22e&oh=00_AQKmUgSfa07O38FKc0B7nDjHqGfJirZOEnmp2juxhVkVGw&oe=6A9D27B4',
+    link: 'https://www.instagram.com/p/CuMyOSdMxiI/',
+    alt: 'Landscape Photography'
+  },
+  {
+    id: 'photo-2',
+    imageUrl: 'https://instagram.fopo5-2.fna.fbcdn.net/v/t51.82787-15/625354869_18302321722275489_8256081187241563824_n.webp?_nc_cat=107&ig_cache_key=MzIyNTMwNjQ4MjMyNDA0NzA0OA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTAyNy5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=C_YWOxGrzQcQ7kNvwFbp2Pi&_nc_oc=AdrqRgwRlhYANJw7GckttVz-LpRl_hWwhhi-hb5G89oBGnBiGKN4WgGgownTffomC2rFK-ha1jN7mL-mr33O6Uw2&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fopo5-2.fna&_nc_gid=Mk4zbEylT_gJw4r0rJVBpw&_nc_ss=7a22e&oh=00_AQK2nEgmqzu6rF7GSuhpL3uKM_dHroxckvT5br_LD2L0Nw&oe=6A9D4435',
+    link: 'https://www.instagram.com/p/CzClyhCsITI/',
+    alt: 'Landscape Urban Photography'
+  },
+  {
+    id: 'photo-3',
+    imageUrl: 'https://instagram.fopo5-1.fna.fbcdn.net/v/t51.82787-15/626182972_18340133383300808_8488103623618696124_n.webp?_nc_cat=110&ig_cache_key=MzE2NjQ4ODU2MjcwMjExNzcwMQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA2Mi5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=9-Wo9YAQEgoQ7kNvwFuV3jd&_nc_oc=Adqs5_0M9Eej68PqI4QutpeQv-uaBfMVdrfA0L9gMMUSxH7gxS6johf3IdXzp3ZKnfWYoKz6oZbLFxZAIaoPZDJa&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fopo5-1.fna&_nc_gid=gIqdAS_YHIuXQD-AVdJukw&_nc_ss=7a22e&oh=00_AQL_kUQgYFx1uujCFkGb4AOgL9ca0lU2XnTaqaRgCm7RtQ&oe=6A9D2A2B',
+    link: 'https://www.instagram.com/p/CvxoJItMmtF/',
+    alt: 'People Photography'
+  },
+  {
+    id: 'photo-4',
+    imageUrl: 'https://instagram.fopo5-2.fna.fbcdn.net/v/t51.82787-15/656269796_18081649118599432_3523380877757389373_n.webp?_nc_cat=108&ig_cache_key=MzQwMjczNDk4OTc1NTk1MzY3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkNBUk9VU0VMX0lURU0ueHBpZHMuMTYwMC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=1Ktl1PRdhXQQ7kNvwFQslHd&_nc_oc=AdpLQA19z0nIKVC-nyG8QoHpPGWw2syDZTNIejmgh-a3UVhMRD6e4T7ox1rGImYkfRDLDMkCoLK1-Tm5uaQAEzBj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fopo5-2.fna&_nc_gid=zyDUyH1qjn1eEfrc4SN1VQ&_nc_ss=7a22e&oh=00_AQLijktumCmNNcBcFCJK6imLtbkTLcNad6L4IlLKNJeJzQ&oe=6A9D34AD',
+    link: 'https://www.threads.com/@the_lucasnunes/post/C848XPXs_Dq/',
+    alt: 'Creative Photography'
+  },
+  {
+    id: 'photo-5',
+    imageUrl: 'https://instagram.fopo5-2.fna.fbcdn.net/v/t51.82787-15/588256851_18301810270250858_5348966809759041694_n.webp?_nc_cat=106&ig_cache_key=Mzc3ODI1MjUzMjcyMDg4MjA0OQ%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=McUlru4l1skQ7kNvwEvaqLz&_nc_oc=AdotSEjcDT9vg8BYlJqac9GHl2mbEuRgIZKpCmTVqFN1OXYPhemuzkAZz83fwBHz5M64UHEJU5EjRxrw7VeKynnr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fopo5-2.fna&_nc_gid=bS00XoBZR2BNVM3rF3wIDw&_nc_ss=7a22e&oh=00_AQJMcOf5vpX6S782SVjE3AFA8_FM5giYn2F23Y3Ff_yPrw&oe=6A9D2F16',
+    link: 'https://www.instagram.com/p/DRvDKkUjFGB/',
+    alt: 'Architecture Photography'
+  },
+  {
+    id: 'photo-6',
+    imageUrl: 'https://instagram.fopo5-2.fna.fbcdn.net/v/t51.82787-15/622475505_18120250723604767_1098187213784346358_n.webp?_nc_cat=101&ig_cache_key=MzE0MDM4MzMzMDYyODk1MDU5Ng%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6IkZFRUQueHBpZHMuMTA4MC5zZHIucmVndWxhcl9waG90by5DMyJ9&_nc_ohc=kqhv8GcPZAgQ7kNvwEM6zfW&_nc_oc=AdpN3nxobeg90v4iBKH2O1dsiyyYbVeph52xkfSs4hU69_kmXjpsBu7_hLt_Rn3HXMBjHUcQ5gnH1H-1P7MRrwkP&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fopo5-2.fna&_nc_gid=DIwaLf1riLgHFZputv2PtA&_nc_ss=7a22e&oh=00_AQKEJNyiN6e1bcCYN1FgfyFlmbti36M_18cYnjg_z4LTFg&oe=6A9D4B13',
+    link: 'https://www.instagram.com/p/CuU4gAwslpE/',
+    alt: 'Nature Photography'
+  }
+];
