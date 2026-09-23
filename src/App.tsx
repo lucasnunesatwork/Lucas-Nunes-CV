@@ -40,7 +40,7 @@ const translations = {
     academicStatus: 'Marketing, Data-driven Marketing and Customer Experience',
     availableBadge: 'À procura de emprego • Leiria / Lisboa',
     heroTitle: 'Não é apenas um CV. É uma demonstração de Estratégia.',
-    heroDescription1: 'Olá! Sou o Lucas Nunes, licenciado em Marketing pela Universidade de Leiria e Oeste (ESTG) e futuro mestrando em Data-driven Marketing (com especialização em Customer Experience) a partir de setembro de 2026.',
+    heroDescription1: 'Olá! Sou o Lucas Nunes, licenciado em Marketing pela Universidade de Leiria e Oeste (ESTG) e, atualmente, a tirar mestrado em Data-driven Marketing (com especialização em Customer Experience) na NOVA IMS.',
     heroDescription2: 'O que verdadeiramente me apaixona é estudar dados e ligá-los às reais intenções de quem consome. Gosto imenso de branding e marketing digital — compreender como uma marca pode ser empática, memorável e adaptar-se com agilidade às tendências de mercado. Acredito que a versatilidade e a adaptabilidade são os dois valores cruciais para o profissional de amanhã (especialmente perante a evolução acelerada da IA).',
     heroDescription3: 'Até agora, colaborei em 3 associações juvenis e empresariais distintas (AJPH - Atemphar, Startup Leiria e AAPI) e estive em contacto com clientes de 4 setores diferentes (desde a saúde e desporto à inovação e internacionalização). Tudo isto com muito dinamismo, rigor estatístico e uma abordagem focada em resultados práticos e mensuráveis!',
     heroQuote: '"Este espaço reúne sete projetos originais que desenvolvi e defendi. Cada relatório de projeto abaixo resume com absoluta fidelidade a metodologia aplicada, os dados reais recolhidos e as conclusões aprovadas."',
@@ -85,7 +85,7 @@ const translations = {
     viewFullProject: 'Ver Projeto Completo',
     trajectoryHeading: 'Trajetória Real',
     trajectoryTitle: 'Formação Académica & Atividade Associativa',
-    trajectoryDescription: 'Estrutura simples e transparente sobre os estudos formais do Lucas Nunes na Universidade de Leiria e Oeste e a sua experiência ativa em liderança de comunicação voluntária.',
+    trajectoryDescription: 'Estrutura simples e transparente sobre os estudos formais do Lucas Nunes na NOVA IMS e na Universidade de Leiria e Oeste, bem como a sua experiência ativa em liderança de comunicação voluntária.',
     partnershipsHeading: 'Criação de Conteúdo',
     partnershipsTitle: 'Parcerias & Dinamismo Local',
     partnershipsDescription: 'Projetos de criação de conteúdo (vídeos curtos) que faço através de parcerias com restaurantes, pastelarias e negócios locais focados na atração visual e experiência.',
@@ -146,7 +146,7 @@ const translations = {
     academicStatus: 'Marketing, Data-driven Marketing and Customer Experience',
     availableBadge: 'Looking for a Job • Leiria / Lisbon',
     heroTitle: 'Not just a CV. A demonstration of Strategy.',
-    heroDescription1: 'Hello! I am Lucas Nunes, a Marketing graduate from Universidade de Leiria e Oeste (ESTG) and an incoming Master\'s student in Data-driven Marketing (specializing in Customer Experience) starting September 2026.',
+    heroDescription1: 'Hello! I am Lucas Nunes, a Marketing graduate from Universidade de Leiria e Oeste (ESTG) currently pursuing a Master\'s degree in Data-driven Marketing (specializing in Customer Experience) at NOVA IMS.',
     heroDescription2: 'What truly excites me is studying data and connecting it to the real motivations behind consumer actions. I am deeply interested in branding and digital marketing — understanding how a brand can be empathetic, memorable, and agile in adapting to market trends. I believe versatility and adaptability are the two most critical values for tomorrow\'s professional (especially in the face of rapid AI evolution).',
     heroDescription3: 'So far, I have collaborated with 3 different youth and business associations (AJPH - Atemphar, Startup Leiria, and AAPI) and have worked with clients across 4 different sectors (from health and sports to innovation and internationalization). All of this with a highly dynamic, statistically rigorous approach, focused on practical and measurable results!',
     heroQuote: '"This space features seven original projects I have developed and defended. Each project report below faithfully summarizes the applied methodology, real collected data, and approved conclusions."',
@@ -191,7 +191,7 @@ const translations = {
     viewFullProject: 'View Full Project',
     trajectoryHeading: 'Real Trajectory',
     trajectoryTitle: 'Academic Training & Association Activity',
-    trajectoryDescription: 'Simple and transparent overview of Lucas Nunes\' formal studies at Universidade de Leiria e Oeste and his active volunteer leadership experience.',
+    trajectoryDescription: 'Simple and transparent overview of Lucas Nunes\' formal studies at NOVA IMS and Universidade de Leiria e Oeste, along with his active volunteer leadership experience.',
     partnershipsHeading: 'Content Creation',
     partnershipsTitle: 'Partnerships & Local Dynamism',
     partnershipsDescription: 'Content creation projects (short-form videos) developed through partnerships with local restaurants, bakeries, and businesses focused on visual appeal and experience.',
@@ -702,12 +702,14 @@ export default function App() {
                   {partner.description}
                 </p>
                 {partner.mediaType === 'video' && partner.mediaUrl && (
-                  <div className="w-full h-[580px] rounded overflow-hidden border border-zinc-200">
+                  <div className="w-full h-[580px] rounded overflow-hidden border border-zinc-200 bg-zinc-950">
                     <iframe
                       src={partner.mediaUrl}
-                      className="w-full h-full"
+                      className="w-full h-full border-0"
                       allowFullScreen
-                      allow="encrypted-media;"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      loading="lazy"
+                      title={partner.title}
                     ></iframe>
                   </div>
                 )}
@@ -716,9 +718,10 @@ export default function App() {
                     href={partner.link} 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center text-xs font-bold font-mono text-emerald-600 hover:text-emerald-700 transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs font-bold font-mono text-emerald-600 hover:text-emerald-700 transition-colors"
                   >
-                    {t.viewOnSocial}
+                    <span>{t.viewOnSocial}</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
                   </a>
                 )}
               </div>
