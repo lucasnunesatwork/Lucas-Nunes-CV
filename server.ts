@@ -8,6 +8,91 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+
+// Handle PDF requests with automatic aliasing and friendly missing-file page
+app.use((req, res, next) => {
+  const decodedPath = decodeURIComponent(req.path);
+  if (!decodedPath.toLowerCase().endsWith('.pdf')) {
+    return next();
+  }
+
+  const publicDir = path.resolve(process.cwd(), 'public');
+  const filename = path.basename(decodedPath);
+  const directPath = path.join(publicDir, filename);
+
+  if (fs.existsSync(directPath)) {
+    return res.sendFile(directPath);
+  }
+
+  // Alias lookup for Gazela Rebranding project
+  if (
+    filename.toLowerCase().includes('gazela') ||
+    filename.toLowerCase().includes('cvdg') ||
+    filename.toLowerCase().includes('tl2') ||
+    filename.toLowerCase().includes('apresentação') ||
+    filename.toLowerCase().includes('apresentacao')
+  ) {
+    const candidates = [
+      'Apresentação CVDG TL2.pdf',
+      'Apresentacao CVDG TL2.pdf',
+      'Gazela Manual_compressed.pdf',
+      'Gazela Manual.pdf',
+    ];
+    for (const cand of candidates) {
+      const candPath = path.join(publicDir, cand);
+      if (fs.existsSync(candPath)) {
+        return res.sendFile(candPath);
+      }
+    }
+    // Also scan public directory for any file containing 'gazela' or 'cvdg'
+    try {
+      const files = fs.readdirSync(publicDir);
+      const match = files.find(f => {
+        const lf = f.toLowerCase();
+        return (lf.includes('gazela') || lf.includes('cvdg')) && lf.endsWith('.pdf');
+      });
+      if (match) {
+        return res.sendFile(path.join(publicDir, match));
+      }
+    } catch {
+      // Ignore
+    }
+  }
+
+  // If a PDF is requested but not on disk, return a dedicated page rather than falling through to SPA index.html
+  res.status(404).send(`<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <title>Documento PDF Pendente | Portfólio Lucas Nunes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body { font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #09090b; color: #f4f4f5; display: flex; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 24px; box-sizing: border-box; }
+      .card { max-width: 580px; background: #18181b; border: 1px solid #27272a; border-radius: 12px; padding: 32px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5); }
+      h1 { margin-top: 0; font-size: 20px; font-weight: 700; color: #fff; display: flex; align-items: center; gap: 10px; }
+      p { color: #a1a1aa; line-height: 1.6; font-size: 14px; }
+      .badge { background: #27272a; color: #10b981; padding: 4px 10px; border-radius: 6px; font-family: monospace; font-size: 13px; display: inline-block; }
+      .steps { background: #09090b; border: 1px solid #27272a; border-radius: 8px; padding: 16px 20px; margin: 20px 0; font-size: 13px; line-height: 1.7; color: #d4d4d8; }
+      .btn { display: inline-block; background: #10b981; color: #000; font-weight: 700; text-decoration: none; padding: 10px 20px; border-radius: 6px; font-size: 13px; transition: 0.2s; }
+      .btn:hover { background: #059669; }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>📄 Ficheiro PDF original pronto para ser carregado</h1>
+      <p>O link do projeto Gazela procura o teu documento original: <span class="badge">Apresentação CVDG TL2.pdf</span> ou <span class="badge">Gazela Manual_compressed.pdf</span>.</p>
+      <div class="steps">
+        <strong>Como colocar o teu PDF original no site:</strong><br />
+        1. No explorador de ficheiros do AI Studio (no painel à esquerda), abre a pasta <strong>public/</strong>.<br />
+        2. Arrasta o teu ficheiro <strong>Apresentação CVDG TL2.pdf</strong> diretamente para a pasta public (exatamente como fizeste com os outros 8 PDFs).<br />
+        3. Recarrega o site ou clica novamente em "Ver PDF Original" — ele abrirá imediatamente o teu ficheiro original com a máxima qualidade!
+      </div>
+      <a class="btn" href="javascript:history.back()">← Voltar ao Portfólio</a>
+    </div>
+  </body>
+</html>`);
+});
+
 app.use(express.static(path.resolve(process.cwd(), 'public')));
 
 const PORT = 3000;
