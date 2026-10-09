@@ -8,6 +8,7 @@ dotenv.config();
 
 const app = express();
 app.use(express.json());
+app.use(express.static(path.resolve(process.cwd(), 'public')));
 
 const PORT = 3000;
 

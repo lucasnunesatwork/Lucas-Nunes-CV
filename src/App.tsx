@@ -24,7 +24,6 @@ import {
   ExternalLink,
   Target,
   FileCheck,
-  Instagram,
   Camera,
   AtSign
 } from 'lucide-react';
