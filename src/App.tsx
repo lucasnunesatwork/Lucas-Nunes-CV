@@ -130,8 +130,8 @@ const translations = {
     secText: 's',
     ctaHeading: 'Pronto para dar vida à sua estratégia? Vamos conversar.',
     ctaSub: 'Estou disponível para novas oportunidades profissionais, estágios de excelência ou projetos onde possa aplicar rigor analítico, empatia de marca e foco em resultados práticos.',
-    ctaPrimaryButton: 'Solicite o meu CV detalhado em PDF',
-    ctaSecondaryButton: 'Ligar por Telefone',
+    pdfPortfolioButton: 'Portefólio em PDF',
+    ctaContactButton: 'Entrar em Contacto',
     strategicChallengeTitle: 'O Desafio Estratégico',
     strategicProblem: '» Qual era o problema?',
     strategicInsight: '» Que dados ou insight usaste para resolver?',
@@ -236,8 +236,8 @@ const translations = {
     secText: 's',
     ctaHeading: 'Ready to bring your strategy to life? Let\'s talk.',
     ctaSub: 'I am available for new professional opportunities, high-caliber internships, or projects where I can apply analytical rigor, brand empathy, and a strong focus on practical results.',
-    ctaPrimaryButton: 'Request my CV in PDF',
-    ctaSecondaryButton: 'Call via Phone',
+    pdfPortfolioButton: 'PDF Portfolio',
+    ctaContactButton: 'Get in Touch',
     strategicChallengeTitle: 'The Strategic Challenge',
     strategicProblem: '» What was the problem?',
     strategicInsight: '» What data or insight did you use?',
@@ -345,20 +345,46 @@ export default function App() {
             </div>
           </div>
           
-          {/* Contact Details */}
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-2 font-mono text-[11px] text-zinc-600">
-            <a href="mailto:lucasnunesatwork@gmail.com" className="flex items-center gap-1.5 hover:text-emerald-600 transition">
-              <Mail className="w-3.5 h-3.5" />
-              <span>lucasnunesatwork@gmail.com</span>
-            </a>
-            <a href="tel:+351927208212" className="flex items-center gap-1.5 hover:text-emerald-600 transition">
-              <Phone className="w-3.5 h-3.5" />
-              <span>+351 927 208 212</span>
-            </a>
-            <span className="flex items-center gap-1.5 text-zinc-400">
-              <MapPin className="w-3.5 h-3.5 text-zinc-400" />
-              <span>Leiria / Lisboa, Portugal</span>
-            </span>
+          {/* Contact Details & Portfolio Button */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 font-mono text-[11px] text-zinc-600">
+            {/* Column 1: Email & Location */}
+            <div className="flex flex-col gap-1.5 justify-center">
+              <a
+                href="mailto:lucasnunesatwork@gmail.com"
+                className="flex items-center gap-1.5 hover:text-emerald-600 transition"
+                title="Email"
+              >
+                <Mail className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
+                <span>lucasnunesatwork@gmail.com</span>
+              </a>
+              <span className="flex items-center gap-1.5 text-zinc-400">
+                <MapPin className="w-3.5 h-3.5 text-zinc-400 shrink-0" />
+                <span>Leiria / Lisboa, Portugal</span>
+              </span>
+            </div>
+
+            {/* Column 2: Phone & Portfolio Button */}
+            <div className="flex flex-col items-start gap-1.5 justify-center">
+              <a
+                href="tel:+351927208212"
+                className="flex items-center gap-1.5 hover:text-emerald-600 transition text-zinc-700 font-semibold"
+                title="Telefone"
+              >
+                <Phone className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                <span>+351 927 208 212</span>
+              </a>
+              <a
+                href="/Portef%C3%B3lio_Lucas%20Nunes.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-mono text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded shadow-xs hover:shadow transition duration-150 group"
+                title={t.pdfPortfolioButton}
+              >
+                <FileText className="w-3 h-3 transition-transform group-hover:scale-110" />
+                <span>{t.pdfPortfolioButton}</span>
+                <ArrowUpRight className="w-3 h-3 opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </a>
+            </div>
           </div>
         </div>
       </header>
@@ -921,23 +947,18 @@ export default function App() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+            <div className="flex flex-col items-center justify-center gap-3 pt-2">
               <a 
                 href="mailto:lucasnunesatwork@gmail.com" 
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono font-bold uppercase tracking-wider px-6 py-4 rounded shadow-lg transition duration-200"
+                className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-mono font-bold uppercase tracking-wider px-8 py-4 rounded shadow-lg hover:shadow-emerald-500/20 transition duration-200 group"
               >
-                <Mail className="w-4 h-4" />
-                <span>{t.ctaPrimaryButton}</span>
-                <ArrowUpRight className="w-3.5 h-3.5 opacity-60" />
+                <Mail className="w-4 h-4 transition-transform group-hover:scale-110" />
+                <span>{t.ctaContactButton}</span>
+                <ArrowUpRight className="w-3.5 h-3.5 opacity-70 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </a>
-              
-              <a 
-                href="tel:+351927208212" 
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 hover:border-zinc-700 text-zinc-300 text-xs font-mono font-bold uppercase tracking-wider px-6 py-4 rounded transition duration-200"
-              >
-                <Phone className="w-4 h-4" />
-                <span>{t.ctaSecondaryButton}</span>
-              </a>
+              <span className="text-xs font-mono text-zinc-400">
+                lucasnunesatwork@gmail.com
+              </span>
             </div>
           </div>
         </section>

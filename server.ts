@@ -59,6 +59,37 @@ app.use((req, res, next) => {
     }
   }
 
+  // Alias lookup for Portefólio Lucas Nunes
+  if (
+    filename.toLowerCase().includes('portef') ||
+    filename.toLowerCase().includes('portf')
+  ) {
+    const portfolioCandidates = [
+      'Portefólio_Lucas Nunes.pdf',
+      'Portefolio_Lucas Nunes.pdf',
+      'Portfólio_Lucas Nunes.pdf',
+      'Portfolio_Lucas Nunes.pdf',
+    ];
+    for (const cand of portfolioCandidates) {
+      const candPath = path.join(publicDir, cand);
+      if (fs.existsSync(candPath)) {
+        return res.sendFile(candPath);
+      }
+    }
+    try {
+      const files = fs.readdirSync(publicDir);
+      const match = files.find(f => {
+        const lf = f.toLowerCase();
+        return (lf.includes('portef') || lf.includes('portf')) && lf.endsWith('.pdf');
+      });
+      if (match) {
+        return res.sendFile(path.join(publicDir, match));
+      }
+    } catch {
+      // Ignore
+    }
+  }
+
   // If a PDF is requested but not on disk, return a dedicated page rather than falling through to SPA index.html
   res.status(404).send(`<!DOCTYPE html>
 <html lang="pt">
