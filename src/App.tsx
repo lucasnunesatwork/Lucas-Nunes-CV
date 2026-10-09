@@ -44,8 +44,11 @@ const translations = {
     heroDescription3: 'Até agora, colaborei em 3 associações juvenis e empresariais distintas (AJPH - Atemphar, Startup Leiria e AAPI) e estive em contacto com clientes de 4 setores diferentes (desde a saúde e desporto à inovação e internacionalização). Tudo isto com muito dinamismo, rigor estatístico e uma abordagem focada em resultados práticos e mensuráveis!',
     heroQuote: '"Este espaço reúne sete projetos originais que desenvolvi e defendi. Cada relatório de projeto abaixo resume com absoluta fidelidade a metodologia aplicada, os dados reais recolhidos e as conclusões aprovadas."',
     keyFacts: 'Métricas de Impacto',
-    academicInstitution: 'Instituição de Ensino',
-    academicCourse: 'Curso Académico',
+    academicInstitution: 'Instituição de Ensino Atual',
+    currentInstitution: 'NOVA IMS',
+    academicCourse: 'Curso Académico Atual',
+    currentCourse: 'Mestrado em Data-driven Marketing (Customer Experience)',
+    previousDegreeNote: 'Licenciado em Marketing pela ESTG (Politécnico de Leiria)',
     associativeActivity: 'Atividade Associativa',
     associativeRole: 'Presidente da Direção @ Atemphar',
     evidenceProjects: 'Projetos de Evidência',
@@ -150,8 +153,11 @@ const translations = {
     heroDescription3: 'So far, I have collaborated with 3 different youth and business associations (AJPH - Atemphar, Startup Leiria, and AAPI) and have worked with clients across 4 different sectors (from health and sports to innovation and internationalization). All of this with a highly dynamic, statistically rigorous approach, focused on practical and measurable results!',
     heroQuote: '"This space features seven original projects I have developed and defended. Each project report below faithfully summarizes the applied methodology, real collected data, and approved conclusions."',
     keyFacts: 'Impact Metrics',
-    academicInstitution: 'Educational Institution',
-    academicCourse: 'Academic Course',
+    academicInstitution: 'Current Educational Institution',
+    currentInstitution: 'NOVA IMS',
+    academicCourse: 'Current Academic Program',
+    currentCourse: 'Master in Data-driven Marketing (Customer Experience)',
+    previousDegreeNote: 'B.Sc. in Marketing from ESTG (Polytechnic of Leiria)',
     associativeActivity: 'Association Activity',
     associativeRole: 'President of the Board @ Atemphar',
     evidenceProjects: 'Evidence Projects',
@@ -450,11 +456,12 @@ export default function App() {
             <div className="space-y-4 font-mono text-xs text-zinc-700">
               <div className="space-y-0.5">
                 <span className="text-[10px] text-zinc-400 uppercase">{t.academicInstitution}</span>
-                <p className="font-black text-zinc-900">Universidade de Leiria e Oeste (ESTG)</p>
+                <p className="font-black text-zinc-900">{t.currentInstitution}</p>
               </div>
               <div className="space-y-0.5">
                 <span className="text-[10px] text-zinc-400 uppercase">{t.academicCourse}</span>
-                <p className="font-black text-zinc-900">Licenciatura em Marketing</p>
+                <p className="font-black text-zinc-900 leading-snug">{t.currentCourse}</p>
+                <p className="text-[10px] text-zinc-500 font-normal">{t.previousDegreeNote}</p>
               </div>
               <div className="space-y-0.5">
                 <span className="text-[10px] text-zinc-400 uppercase">{t.associativeActivity}</span>
